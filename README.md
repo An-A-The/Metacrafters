@@ -1,10 +1,9 @@
-The Solidity program you provided is a simple "Hello World" program that demonstrates the basic syntax and functionality of Solidity. It is a contract written in Solidity and can be used to develop smart contracts on the Ethereum blockchain.
+The Solidity program is a simple "Hello World" program that illustrates the basic syntax and functionality of Solidity. It is a contract written in Solidity and can be used to develop smart contracts on the Ethereum blockchain.
 
-To execute this program, you can use Remix, an online Solidity IDE. Follow these steps to get started:
+To execute this program, we can use Remix, an online Solidity IDE. Follow these steps to get started:
 
 Go to the Remix website at https://remix.ethereum.org/.
 On the left-hand sidebar, click on the "+" icon to create a new file. Save the file with a .sol extension (e.g., HelloWorld.sol).
-Copy and paste the provided Solidity code into the file:
 
 
 pragma solidity ^0.8.4;
