@@ -1,5 +1,3 @@
-execute the function and retrieve the "Hello World!" message.
-
 The Solidity program you provided is a simple "Hello World" program that demonstrates the basic syntax and functionality of Solidity. It is a contract written in Solidity and can be used to develop smart contracts on the Ethereum blockchain.
 
 To execute this program, you can use Remix, an online Solidity IDE. Follow these steps to get started:
@@ -7,6 +5,8 @@ To execute this program, you can use Remix, an online Solidity IDE. Follow these
 Go to the Remix website at https://remix.ethereum.org/.
 On the left-hand sidebar, click on the "+" icon to create a new file. Save the file with a .sol extension (e.g., HelloWorld.sol).
 Copy and paste the provided Solidity code into the file:
+
+
 pragma solidity ^0.8.4;
 
 contract HelloWorld {
@@ -14,6 +14,8 @@ contract HelloWorld {
         return "Hello World!";
     }
 }
+
+
 Switch to the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.4" or another compatible version.
 Click on the "Compile HelloWorld.sol" button to compile the code.
 Once the code is compiled, you can deploy the contract by following these steps:
