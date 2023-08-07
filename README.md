@@ -1,18 +1,67 @@
-Final-project/Cheeta:
-Creating, minting, burning our own created coin on ethereum using solidity.
+Title: Creating a Token: A Solidity Program for Beginners
 
-Project Description:
-In this project we have used basic functions and variable that have thought throughout the different modules using solidity.The main goal of this project is to create our token on ethereum blockchain.And learn basic functions such as minting and burning the tokens and also writing conditional statements to reduce basic errors.
+I. Introduction
+  Overview of the Solidity program
+Purpose and benefits of creating a token
+Target audience: Solidity newcomers
 
-Executing program:
-To run this program, we can use Remix, an online Solidity IDE. To get started, let's go to the Remix website at https://remix.ethereum.org/.
+II. Program Structure and Syntax
+  Explanation of Solidity contract and variables
+Overview of public and mapping variables used in the program
+Introduction to functions for minting and burning tokens
 
-Once we are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., HelloWorld.sol). After writing the code according to the instructions we can test the code! Now use the left tab showing "deploy", with mint we can add some coins and check the total supply and balances.
+III. Program Walkthrough
+  Step-by-step guide on how to use the program
+Instructions for implementing the program in Remix, an online Solidity IDE
+Saving the program with a .sol extension and creating a new file
 
-My Experience:
+IV. Code Implementation
+  Detailed code explanation and breakdown
+Line-by-line analysis of the provided code snippet
+Explanation of Solidity language concepts used in the program
 
-I really had fun coding using solidity,this concept was very foreign to me ,i think i understood the concept and language very well. i am looking forward to complete more modules and courses in MetaCrafters.
+V. Running the Program
+  Instructions for executing and testing the program in Remix
+Overview of Remix features and functionalities for program execution
 
-License:
+VI. Conclusion
+  Recap of the program's purpose and benefits
+Encouragement for further exploration of Solidity programming
 
-This project is licensed under the MIT License.
+Please note that the content within each section should be expanded upon to provide detailed information and instructions.
+// SPDX-License-Identifier: MIT pragma solidity 0.8.18;
+
+contract MyToken {
+
+// public variables here
+string public tokenname = "CHEETA";
+string public tokenabbrv = "CTA";
+uint public totalsupply = 0;
+
+// mapping variable here
+mapping(address => uint) public balances;
+
+// mint function
+function mint (address _address, uint _value) public {
+    totalsupply += _value;
+    balances[_address] += _value;
+}
+
+// burn function
+function burn (address _address, uint _value) public {
+    if (balances[_address] >= _value) {
+    totalsupply -= _value;
+    balances[_address] -= _value;
+    }
+}
+}
+
+To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.4" (or another compatible version), and then click on the "Compile MyToken.sol" button.
+
+Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "MyToken" contract from the dropdown menu, and then click on the "Deploy" button.
+
+Once the contract is deployed, you can interact with it by calling the mint and burn functions. Click on the "MyToken" contract in the left-hand sidebar, and click on the tokenname,tokenabbrv,totelsupply , and then click on the "mint" function. Finally, click on the "transact" button to execute the function and you can mint some coins. And similarly click on the "burn " function to remove some coins.
+
+#License
+
+This project is licensed under SPDX-License-Identifier: MIT
