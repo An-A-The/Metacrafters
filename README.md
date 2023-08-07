@@ -1,4 +1,4 @@
-Title: Creating a Token: A Solidity Program for Beginners
+Title: A Solidity Program for Beginners
 
 I. Introduction
   Overview of the Solidity program
