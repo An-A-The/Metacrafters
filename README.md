@@ -29,13 +29,15 @@ VI. Conclusion
 Encouragement for further exploration of Solidity programming
 
 Please note that the content within each section should be expanded upon to provide detailed information and instructions.
+Copy and paste the following code into the file:
+
 // SPDX-License-Identifier: MIT pragma solidity 0.8.18;
 
 contract MyToken {
 
 // public variables here
-string public tokenname = "CHEETA";
-string public tokenabbrv = "CTA";
+string public tokenname = "BETA";
+string public tokenabbrv = "BTA";
 uint public totalsupply = 0;
 
 // mapping variable here
@@ -55,6 +57,7 @@ function burn (address _address, uint _value) public {
     }
 }
 }
+
 
 To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.4" (or another compatible version), and then click on the "Compile MyToken.sol" button.
 
