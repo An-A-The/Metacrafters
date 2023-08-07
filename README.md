@@ -1,4 +1,4 @@
-Title: A Solidity Program for Beginners
+Title: A Solidity Program for Creating a Coin
 
 I. Introduction
   Overview of the Solidity program
